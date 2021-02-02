@@ -17,3 +17,12 @@ $pdfs.on('click', function(event){
 });
 
 $('#links').append($pdfCheckbox);
+
+/*$('a').each(function(index, element){
+  console.log(index, $(element).attr('href'));  
+}*/
+
+$('a').each(function(){
+  const url = $(this).attr('href');
+  $(this).parent().append(`(${url})`);
+});
