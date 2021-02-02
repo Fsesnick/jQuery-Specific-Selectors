@@ -9,3 +9,5 @@ const $pdfs = $('a[href$=".pdf"]');
 
 $secureLinks.attr('target', '_blank');
 $pdfs.attr('download', true);
+
+$odd.css('backgroundColor', 'lightgrey');
